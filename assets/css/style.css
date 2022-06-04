@@ -1,0 +1,270 @@
+:root {
+  --primary-color: rgb(17, 86, 102);
+  --primary-color-darker: rgb(9, 48, 56);
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  display: block;
+  margin-left: 5px;
+  margin-bottom: 3px;
+  border-style: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 12px;
+}
+
+span{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 10px;
+  margin-left: 5px;
+  color: gray;
+}
+
+footer{
+  margin-top: 60px;
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hr{
+  display: flex;
+  width: 85px;
+  height: 1px;
+  border: 0.75px solid lightgrey;
+}
+.label{
+  border: 0.75px solid rgb(170, 170, 170);
+  border-radius: 2px;
+  text-align: left;
+  max-width: 230px;
+  margin: 5px auto ;
+  height: 38px;
+  background: rgba(211, 211, 211, 0.212);
+}
+
+.gray-bg{
+  background: rgba(211, 211, 211, 0);
+}
+
+.img-back {
+  height: 530px;
+  position: absolute;
+  z-index: 1;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin: 50px auto auto 50px;
+}
+
+.log {
+  height: 360px;
+}
+
+.sign-up {
+  height: 60px;
+}
+
+.log-facebook {
+  color: #2d4c8a;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 15px ;
+}
+
+.log-facebook img{
+  margin-right: 8px;
+}
+.log,
+.sign-up {
+  border: 0.75px solid lightgrey;
+  border-radius: 3px;
+  max-width: 350px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.logIn {
+  margin-top: 15px;
+  margin-left: 300px;
+}
+
+.download {
+  max-width: 300px;
+  text-align: center;
+}
+
+.get-app {
+  width: 100px;
+  margin-right: 10px;
+}
+
+.logo {
+  width: 155px;
+  margin: 15px 0px 10px 0px;
+}
+
+.face-logo {
+  width: 15px;
+}
+
+.log-facebook:hover{
+  cursor: pointer;
+}
+
+.sign-up{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 13px;
+}
+
+.footer-ln{
+  margin-left: 50px;
+  margin-right: 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap:wrap;
+}
+
+.footer-ln p{
+  margin: 3px 4px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 11px;
+  color: gray;
+}
+
+.footer-ln .row{
+  flex: auto 1;
+}
+
+
+.sign-font{
+  margin-top: -2px;
+  margin-left: 5px;
+  color: #3498DB;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+}
+
+#log-download{
+  width: 300px;
+}
+
+#p {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 13px;
+  margin: 15px 0px;
+  text-align: center;
+}
+
+#forgot-font{
+  margin-top: 20px;
+  color: #2d4c8a;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+#button{
+  color: white;
+  background:#3498DB ;
+  font-weight: 600;
+  margin: 10px auto 10px auto;
+  width: 230px;
+  height: 28px;
+  border-radius: 4px;
+}
+
+#button:hover{
+  cursor: pointer;
+}
+
+#animated {
+  position: relative;
+  z-index: 1;
+  margin-left: 75px;
+  margin-top: 15px;
+}
+
+#or{
+  max-width: 230px;
+  margin: 15px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 12px;
+  color: gray;
+}
+
+#animated img {
+  height: 530px;
+  position: absolute;
+  left: 0;
+  -webkit-animation: imageOpacity 15s ease-in-out infinite 0s;
+  -moz-animation: imageOpacity 15s ease-in-out infinite 0s;
+  -o-animation: imageOpacity 15s ease-in-out infinite 0s;
+  animation: imageOpacity 15s ease-in-out infinite 0s;
+}
+
+@keyframes imageOpacity {
+  0% {
+    opacity: 1;
+  }
+
+  25% {
+    opacity: 1;
+  }
+
+  42% {
+    opacity: 0;
+  }
+
+  81% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+#animated img:nth-of-type(1) {
+  animation-delay: 10s;
+}
+
+#animated img:nth-of-type(2) {
+  animation-delay: 5s;
+}
+
+#animated img:nth-of-type(3) {
+  animation-delay: 0s;
+}
+
+@media (max-width: 760px){
+  .image{
+    display: none;
+  }
+  #animated{
+    display: none;
+  }
+  .logIn{
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
